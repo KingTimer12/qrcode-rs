@@ -1,0 +1,18 @@
+[package]
+name = "qrcode-rs"
+version = "0.1.0"
+description = "A simple library that generates a qrcode in javascript"
+authors = ["Aaron King (https://github.com/KingTimer12)"]
+license = "ISC"
+edition = "2024"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+neon = "1.1"
+image = "0.25.6"
+qrcode = "0.14.1"

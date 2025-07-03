@@ -1,0 +1,52 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "qrcode-rs",
+      "dependencies": {
+        "qrcode-rs": "../",
+      },
+      "devDependencies": {
+        "@types/bun": "latest",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
+      },
+    },
+  },
+  "packages": {
+    "@cargo-messages/android-arm-eabi": ["@cargo-messages/android-arm-eabi@0.1.81", "", { "os": "android", "cpu": "arm" }, "sha512-cpRbgb56e9LmAj96Tixtz9/bTlaJAeplWNNv4obu+eqQyZd3ZjX04TJd9fM1bjHDGVyR9GTVlgBsbQEntIGkwg=="],
+
+    "@cargo-messages/darwin-arm64": ["@cargo-messages/darwin-arm64@0.1.81", "", { "os": "darwin", "cpu": "arm64" }, "sha512-OwGqsw+tbJx37a/vH4T8R9qkrrFYoTIOnckbA9+MhQodE2FSWyk3HvLh+z8jjl+QZa1RSOU9Ax6gt/46h0BiTg=="],
+
+    "@cargo-messages/darwin-x64": ["@cargo-messages/darwin-x64@0.1.81", "", { "os": "darwin", "cpu": "x64" }, "sha512-Iu761bPk25Ce6yUdDCjjeVuT8/xbBmczyaNB7oYBmAZEE5rshvCJ42TqSShYYP+S7pKkN42nBhkFooaZrqaz9g=="],
+
+    "@cargo-messages/linux-arm-gnueabihf": ["@cargo-messages/linux-arm-gnueabihf@0.1.81", "", { "os": "linux", "cpu": "arm" }, "sha512-iIuy7KTJAEhbiqlIlcxQOdW6opI6M9LXlgd/jdsHbP2FjmTyhTLnd3JCJ6JeAeidwknCDs+CFlaVmPxTKSytsg=="],
+
+    "@cargo-messages/linux-arm64-gnu": ["@cargo-messages/linux-arm64-gnu@0.1.81", "", { "os": "linux", "cpu": "arm64" }, "sha512-QPQRsHj9m/9ga8wRBlLh8t2AXyr40+/H55FIKVj7zIjV++waY/TbSTPofDZQhMycd5VSGLKztfhahiCO7c/RAQ=="],
+
+    "@cargo-messages/linux-arm64-musl": ["@cargo-messages/linux-arm64-musl@0.1.81", "", { "os": "linux", "cpu": "arm64" }, "sha512-9O0ATesIOjDTz2L01OtlGHYwP86I31/mzXMC+ryQkzbbIKj7KUiSqmEc29I14I517UYO8/sMeow6q6MVBpehlA=="],
+
+    "@cargo-messages/linux-x64-gnu": ["@cargo-messages/linux-x64-gnu@0.1.81", "", { "os": "linux", "cpu": "x64" }, "sha512-wEFYxCdtHNiEvp5KEg17CfRCUdfRTtkL+1GASROyvYEUV6DQf6TXxfHuuWg2xlVxh5fqiTGFSRfiqFrCDL/xrw=="],
+
+    "@cargo-messages/linux-x64-musl": ["@cargo-messages/linux-x64-musl@0.1.81", "", { "os": "linux", "cpu": "x64" }, "sha512-zi5pKIh60oPwOCDQapAZ3Mya4y56MI2BoGvY8JtztYaXTorGmAoyf6jjb50Wt+HfoYYjM3OlPt03XMlCFZJnIQ=="],
+
+    "@cargo-messages/win32-arm64-msvc": ["@cargo-messages/win32-arm64-msvc@0.1.81", "", { "os": "win32", "cpu": "arm64" }, "sha512-oyiT8AYLoguF7cFOMYDsPv3eirzBcFafOOfRsFyd3+wmaPTl/DdbCq446oThRmSAsEGJpzhzj7TafcnXMBkHbg=="],
+
+    "@cargo-messages/win32-x64-msvc": ["@cargo-messages/win32-x64-msvc@0.1.81", "", { "os": "win32", "cpu": "x64" }, "sha512-B5Ukf4AohtIv27uCP/AgM+7vYwQ4RacI6m8ZBr2XKeSrjZXcXguzlZd+wD7bD5+wa0capvXKUskZDnpG/DcYiA=="],
+
+    "@neon-rs/cli": ["@neon-rs/cli@0.1.82", "", { "optionalDependencies": { "@cargo-messages/android-arm-eabi": "0.1.81", "@cargo-messages/darwin-arm64": "0.1.81", "@cargo-messages/darwin-x64": "0.1.81", "@cargo-messages/linux-arm-gnueabihf": "0.1.81", "@cargo-messages/linux-arm64-gnu": "0.1.81", "@cargo-messages/linux-arm64-musl": "0.1.81", "@cargo-messages/linux-x64-gnu": "0.1.81", "@cargo-messages/linux-x64-musl": "0.1.81", "@cargo-messages/win32-arm64-msvc": "0.1.81", "@cargo-messages/win32-x64-msvc": "0.1.81" }, "bin": { "neon": "index.js" } }, "sha512-QrlGPQp9KOGuMvjjua79lEV2QTcE16m8JatG5ITdQpBAwRQpDw5xab57W9130y2iUEfMzYtp7v6pcN1fUB0Exg=="],
+
+    "@types/bun": ["@types/bun@1.2.17", "", { "dependencies": { "bun-types": "1.2.17" } }, "sha512-l/BYs/JYt+cXA/0+wUhulYJB6a6p//GTPiJ7nV+QHa8iiId4HZmnu/3J/SowP5g0rTiERY2kfGKXEK5Ehltx4Q=="],
+
+    "@types/node": ["@types/node@24.0.10", "", { "dependencies": { "undici-types": "~7.8.0" } }, "sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA=="],
+
+    "bun-types": ["bun-types@1.2.17", "", { "dependencies": { "@types/node": "*" } }, "sha512-ElC7ItwT3SCQwYZDYoAH+q6KT4Fxjl8DtZ6qDulUFBmXA8YB4xo+l54J9ZJN+k2pphfn9vk7kfubeSd5QfTVJQ=="],
+
+    "qrcode-rs": ["qrcode-rs@file:..", { "devDependencies": { "@neon-rs/cli": "0.1.82" } }],
+
+    "typescript": ["typescript@5.8.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ=="],
+
+    "undici-types": ["undici-types@7.8.0", "", {}, "sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw=="],
+  }
+}

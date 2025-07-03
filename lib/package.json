@@ -1,0 +1,35 @@
+{
+  "name": "qrcode-rs",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "A simple library that generates a qrcode in javascript",
+  "author": "Aaron King (https://github.com/KingTimer12)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "qrcode-rs": "../"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingTimer12/qrcode-rs.git"
+  },
+  "keywords": [
+    "qrcode",
+    "QRCode",
+    "QRCODE",
+    "Rust",
+    "rust",
+    "node",
+    "node.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/KingTimer12/qrcode-rs/issues"
+  },
+  "homepage": "https://github.com/KingTimer12/qrcode-rs#readme"
+}
