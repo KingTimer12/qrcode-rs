@@ -5,6 +5,8 @@
       "name": "qrcode-rs",
       "devDependencies": {
         "@neon-rs/cli": "0.1.82",
+        "@types/node": "^24.0.10",
+        "typescript": "^5.8.3",
       },
     },
   },
@@ -30,5 +32,11 @@
     "@cargo-messages/win32-x64-msvc": ["@cargo-messages/win32-x64-msvc@0.1.81", "", { "os": "win32", "cpu": "x64" }, "sha512-B5Ukf4AohtIv27uCP/AgM+7vYwQ4RacI6m8ZBr2XKeSrjZXcXguzlZd+wD7bD5+wa0capvXKUskZDnpG/DcYiA=="],
 
     "@neon-rs/cli": ["@neon-rs/cli@0.1.82", "", { "optionalDependencies": { "@cargo-messages/android-arm-eabi": "0.1.81", "@cargo-messages/darwin-arm64": "0.1.81", "@cargo-messages/darwin-x64": "0.1.81", "@cargo-messages/linux-arm-gnueabihf": "0.1.81", "@cargo-messages/linux-arm64-gnu": "0.1.81", "@cargo-messages/linux-arm64-musl": "0.1.81", "@cargo-messages/linux-x64-gnu": "0.1.81", "@cargo-messages/linux-x64-musl": "0.1.81", "@cargo-messages/win32-arm64-msvc": "0.1.81", "@cargo-messages/win32-x64-msvc": "0.1.81" }, "bin": { "neon": "index.js" } }, "sha512-QrlGPQp9KOGuMvjjua79lEV2QTcE16m8JatG5ITdQpBAwRQpDw5xab57W9130y2iUEfMzYtp7v6pcN1fUB0Exg=="],
+
+    "@types/node": ["@types/node@24.0.10", "", { "dependencies": { "undici-types": "~7.8.0" } }, "sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA=="],
+
+    "typescript": ["typescript@5.8.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ=="],
+
+    "undici-types": ["undici-types@7.8.0", "", {}, "sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw=="],
   }
 }

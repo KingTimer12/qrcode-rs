@@ -3,20 +3,29 @@
   "version": "0.1.0",
   "description": "A simple library that generates a qrcode in javascript",
   "main": "index.node",
+  "types": "lib/dist/index.d.ts",
+  "files": [
+    "index.node",
+    "lib/dist"
+  ],
   "scripts": {
     "test": "cargo test",
     "cargo-build": "cargo build --message-format=json-render-diagnostics > cargo.log",
     "cross-build": "cross build --message-format=json-render-diagnostics > cross.log",
     "postcargo-build": "neon dist < cargo.log",
     "postcross-build": "neon dist -m /target < cross.log",
-    "debug": "npm run cargo-build --",
-    "build": "npm run cargo-build -- --release",
-    "cross": "npm run cross-build -- --release"
+    "build": "npm run build:rs && npm run build:ts",
+    "debug": "cargo-build --",
+    "build:rs": "npm run cargo-build -- --release",
+    "cross:rs": "npm run cross-build -- --release",
+    "build:ts": "tsc -p lib/tsconfig.json"
   },
   "author": "Aaron King (https://github.com/KingTimer12)",
   "license": "ISC",
   "devDependencies": {
-    "@neon-rs/cli": "0.1.82"
+    "@neon-rs/cli": "0.1.82",
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
   },
   "repository": {
     "type": "git",
