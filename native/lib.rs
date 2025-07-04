@@ -48,6 +48,6 @@ fn create_qrcode(mut cx: FunctionContext) -> JsResult<JsObject> {
 
 #[neon::main]
 fn main(mut cx: ModuleContext) -> NeonResult<()> {
-    cx.export_function("createQrcode", create_qrcode)?;
+    cx.export_function("generateQRCode", create_qrcode)?;
     Ok(())
 }

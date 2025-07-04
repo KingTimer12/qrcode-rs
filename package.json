@@ -1,25 +1,55 @@
 {
   "name": "qrcode-rs",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A simple library that generates a qrcode in javascript",
-  "main": "index.node",
-  "types": "lib/dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./dist": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./dist/index.js": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./dist/index.d.ts": {
+      "import": "./dist/index.d.ts",
+      "require": "./dist/index.d.ts",
+      "default": "./dist/index.d.ts"
+    },
+    "./dist/index.node": {
+      "import": "./index.node",
+      "require": "./index.node",
+      "default": "./index.node"
+    }
+  },
+  "type": "module",
   "files": [
     "index.node",
-    "lib/dist"
+    "dist"
   ],
-  "scripts": {
+"scripts": {
     "test": "cargo test",
     "cargo-build": "cargo build --message-format=json-render-diagnostics > cargo.log",
     "cross-build": "cross build --message-format=json-render-diagnostics > cross.log",
     "postcargo-build": "neon dist < cargo.log",
     "postcross-build": "neon dist -m /target < cross.log",
-    "build": "npm run build:rs && npm run build:ts",
     "debug": "cargo-build --",
     "build:rs": "npm run cargo-build -- --release",
     "cross:rs": "npm run cross-build -- --release",
-    "build:ts": "tsc -p lib/tsconfig.json"
-  },
+    "build:ts": "tsc -p tsconfig.json",
+    "postbuild:rs": "cp index.node dist/"
+},
   "author": "Aaron King (https://github.com/KingTimer12)",
   "license": "ISC",
   "devDependencies": {
