@@ -1,7 +1,7 @@
 {
   "name": "qrcode-rs",
   "version": "0.1.4",
-  "description": "A simple library that generates a qrcode in javascript",
+  "description": "A simple library that generates a qrcode in typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",

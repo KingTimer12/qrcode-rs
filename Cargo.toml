@@ -1,13 +1,11 @@
 [package]
 name = "qrcode-rs"
 version = "0.1.0"
-description = "A simple library that generates a qrcode in javascript"
+description = "A simple library that generates a qrcode in typescript"
 authors = ["Aaron King (https://github.com/KingTimer12)"]
 license = "ISC"
 edition = "2024"
 exclude = ["index.node"]
-
-
 
 [lib]
 crate-type = ["cdylib"]
