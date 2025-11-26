@@ -1,0 +1,22 @@
+
+[package]
+authors = ["AaronKing <aaron.cmfor@gmail.com>"]
+edition = "2021"
+name = "qrcode_rs"
+version = "0.1.8"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+image = "0.25.9"
+napi = "3.0.0"
+napi-derive = "3.0.0"
+qrcode = "0.14.1"
+
+[build-dependencies]
+napi-build = "2"
+
+[profile.release]
+lto = true
+strip = "symbols"
