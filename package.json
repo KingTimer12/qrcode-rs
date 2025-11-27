@@ -1,5 +1,5 @@
 {
-  "name": "qrcode-rs",
+  "name": "@kingtimer12/qrcode-rs",
   "version": "0.1.8",
   "description": "A simple library that generates a qrcode in javascript",
   "main": "index.js",
@@ -7,6 +7,11 @@
     "type": "git",
     "url": "https://github.com/KingTimer12/qrcode-rs.git"
   },
+  "homepage": "https://github.com/KingTimer12/qrcode-rs#readme",
+  "bugs": {
+    "url": "https://github.com/KingTimer12/qrcode-rs/issues"
+  },
+  "author": "KingTimer12",
   "license": "MIT",
   "browser": "browser.js",
   "keywords": [
