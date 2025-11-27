@@ -1,11 +1,11 @@
 {
   "name": "qrcode-rs",
   "version": "0.1.8",
-  "description": "Template project for writing node package with napi-rs",
+  "description": "A simple library that generates a qrcode in javascript",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/napi-rs/package-template.git"
+    "url": "https://github.com/KingTimer12/qrcode-rs.git"
   },
   "license": "MIT",
   "browser": "browser.js",
