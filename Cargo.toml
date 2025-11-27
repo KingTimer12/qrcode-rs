@@ -18,5 +18,19 @@ qrcode = "0.14.1"
 napi-build = "2"
 
 [profile.release]
-lto = true
-strip = "symbols"
+codegen-units = 1           # Single codegen unit for better optimization
+lto = "fat"                 # Full LTO for maximum speed
+opt-level = 3               # Maximum optimization
+overflow-checks = false     # Disable overflow checks for speed
+panic = "abort"             # Smaller and faster panic handler
+strip = "symbols"           # Strip symbols to reduce binary size
+incremental = false         # Disable incremental compilation for smaller binaries
+
+[profile.release.package."*"]
+opt-level = 3               # Optimize all dependencies too
+codegen-units = 1           # Apply single codegen unit to dependencies too
+
+[profile.dev]
+opt-level = 0               # No optimization for faster compilation
+debug = true                # Include debug info
+incremental = true          # Enable incremental compilation for faster rebuilds

@@ -15,15 +15,15 @@ Um gerador de QR Code de alta performance escrito em Rust com bindings para Node
 ## Instalação
 
 ```bash
-npm install qrcode-rs
+npm install @kingtimer12/qrcode-rs
 # ou
-yarn add qrcode-rs
+yarn add @kingtimer12/qrcode-rs
 ```
 
 ## Uso
 
 ```javascript
-const { generateQRCode } = require('qrcode-rs')
+const { generateQRCode } = require('@kingtimer12/qrcode-rs')
 const fs = require('fs')
 
 // Gerar QR Code
