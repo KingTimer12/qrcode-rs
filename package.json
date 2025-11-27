@@ -1,6 +1,6 @@
 {
   "name": "@kingtimer12/qrcode-rs",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A simple library that generates a qrcode in javascript",
   "main": "index.js",
   "repository": {
